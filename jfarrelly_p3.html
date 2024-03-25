@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 3 - Student Survey</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a1804f2b23.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Business Analytics Student Survey</h1>
     <form action="jfarrelly_ty.html">
-        <label for="race">Race/Ethnicity:</label><br>
-        <!-- Add input or select elements for race/ethnicity as required -->
+        <fieldset>
+            <legend>Race/Ethnicity (select all that apply):</legend>
+            <label><input type="checkbox" name="race" value="American Indian or Alaska Native"> American Indian or Alaska Native</label><br>
+            <label><input type="checkbox" name="race" value="Asian"> Asian</label><br>
+            <label><input type="checkbox" name="race" value="Black or African American"> Black or African American</label><br>
+            <label><input type="checkbox" name="race" value="Native Hawaiian or Other Pacific Islander"> Native Hawaiian or Other Pacific Islander</label><br>
+            <label><input type="checkbox" name="race" value="White"> White</label><br>
+            <label><input type="checkbox" name="race" value="Decline to state"> Decline to state</label>
+        </fieldset>
+        <br>
         
-        <p>
-            Gender/Sex: <br>
-            <!-- Add input elements for gender/sex -->
-            <span class="tooltip">
-                <i class="fa-solid fa-circle-question"></i>
-                <span class="tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
-            </span>
-        </p>
+        <fieldset>
+            <legend>Gender/Sex: 
+                <span class="tooltip">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
+                </span>
+            </legend>
+            <label><input type="checkbox" name="gender" value="Man"> Man</label><br>
+            <label><input type="checkbox" name="gender" value="Woman"> Woman</label><br>
+            <label><input type="checkbox" name="gender" value="Trans Man"> Trans Man</label><br>
+            <label><input type="checkbox" name="gender" value="Trans Woman"> Trans Woman</label><br>
+            <label><input type="checkbox" name="gender" value="Genderqueer"> Genderqueer</label><br>
+            <label><input type="checkbox" name="gender" value="Gender Non-conforming"> Gender Non-conforming</label><br>
+            <label><input type="checkbox" name="gender" value="Non-binary"> Non-binary</label><br>
+            <label><input type="checkbox" name="gender" value="Multi-gender"> Multi-gender</label><br>
+            <label><input type="checkbox" name="gender" value="Decline to state"> Decline to state</label>
+        </fieldset>
+        
         <input type="submit" value="Submit">
     </form>
 </body>
